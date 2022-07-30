@@ -18,12 +18,12 @@ const fetchApi = (ip) => {
     .catch((error) => console.error(error));
 };
 
-// const $ = (selector) => document.querySelector(selector);
+const $ = (selector) => document.querySelector(selector);
 
-const $form = document.querySelector("#form");
-const $input = document.querySelector("#input");
-const $submit = document.querySelector("#submit");
-const $results = document.querySelector("#results");
+const $form =$("#form");
+const $input =$("#input");
+const $submit = $("#submit");
+const $results =$("#results");
 
 $form.addEventListener("submit", async (e) => {
   e.preventDefault();
