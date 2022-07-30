@@ -7,16 +7,15 @@ const OPTIONS = {
     "X-RapidAPI-Host": "ip-geolocation-and-threat-detection.p.rapidapi.com",
   },
 };
-
-const fetchApi = (ip) => {
-  console.log("[****]OUTPUT[*****]");
-  return fetch(
-    `https://ip-geolocation-and-threat-detection.p.rapidapi.com/${ip}`,
-    OPTIONS
-  )
-    .then((res) => res.json())
-    .catch((error) => console.error(error));
-};
+// const fetchApi = (ip) => {
+//   console.log("[****]OUTPUT[*****]");
+//   return fetch(
+//     `https://ip-geolocation-and-threat-detection.p.rapidapi.com/${ip}`,
+//     OPTIONS
+//   )
+//     .then((res) => res.json())
+//     .catch((error) => console.error(error));
+// };
 
 const $ = (selector) => document.querySelector(selector);
 
