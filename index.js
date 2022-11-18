@@ -9,20 +9,17 @@ const OPTIONS = {
 };
 const fetchApi = (ip) => {
   console.log("[****]OUTPUT[*****]");
-  return fetch(
-    `https://ip-geolocation-and-threat-detection.p.rapidapi.com/${ip}`,
-    OPTIONS
-  )
+  return fetch(`https://ip-geo-location.p.rapidapi.com/ip/${ip}`, OPTIONS)
     .then((res) => res.json())
     .catch((error) => console.error(error));
 };
 
 const $ = (selector) => document.querySelector(selector);
 
-const $form =$("#form");
-const $input =$("#input");
+const $form = $("#form");
+const $input = $("#input");
 const $submit = $("#submit");
-const $results =$("#results");
+const $results = $("#results");
 
 $form.addEventListener("submit", async (e) => {
   e.preventDefault();
